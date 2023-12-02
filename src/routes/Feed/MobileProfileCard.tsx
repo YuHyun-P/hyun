@@ -50,6 +50,11 @@ const StyledWrapper = styled.div`
     border-radius: 1rem;
     background-color: ${({ theme }) =>
       theme.scheme === "light" ? "white" : theme.colors.gray4};
+
+    img {
+      border-radius: 0.6rem;
+    }
+
     > .wrapper {
       display: flex;
       gap: 0.5rem;
