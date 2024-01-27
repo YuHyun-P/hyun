@@ -110,4 +110,8 @@ const StyledWrapper = styled.div`
     text-wrap: wrap;
     font-family: ${firaCode.style.fontFamily};
   }
+
+  .notion-list li {
+    padding: 0;
+  }
 `
