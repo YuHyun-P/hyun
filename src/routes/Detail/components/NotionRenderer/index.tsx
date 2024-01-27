@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic"
 import Image from "next/image"
 import Link from "next/link"
+import { Fira_Code } from "next/font/google"
 import { ExtendedRecordMap } from "notion-types"
 import useScheme from "src/hooks/useScheme"
 
@@ -78,6 +79,8 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
 
 export default NotionRenderer
 
+const firaCode = Fira_Code({ subsets: ["latin"] })
+
 const StyledWrapper = styled.div`
   /* // TODO: why render? */
   .notion-collection-page-properties {
@@ -89,5 +92,17 @@ const StyledWrapper = styled.div`
     .notion-quote {
       font-size: 0.875rem;
     }
+  }
+
+  .notion-inline-code {
+    font-family: ${firaCode.style.fontFamily};
+    padding: 0.1em 0.3em;
+    color: var(--notion-inline-code_co);
+    background: var(--notion-inline-code-background_co);
+  }
+
+  .notion-code > code {
+    text-wrap: wrap;
+    font-family: ${firaCode.style.fontFamily};
   }
 `

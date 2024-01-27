@@ -1,0 +1,9 @@
+:root {
+  --notion-inline-code_co: #787774;
+  --notion-inline-code-background_co: rgba(135, 131, 120, 0.15);
+}
+
+.dark-mode {
+  --notion-inline-code_co: #b0b0b0;
+  --notion-inline-code-background_co: rgba(123, 123, 123, 0.3);
+}
