@@ -108,6 +108,7 @@ const StyledWrapper = styled.div`
 
   .notion-code > code {
     text-wrap: wrap;
+    word-break: break-all;
     font-family: ${firaCode.style.fontFamily};
   }
 
