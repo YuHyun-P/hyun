@@ -115,4 +115,9 @@ const StyledWrapper = styled.div`
   .notion-list li {
     padding: 0;
   }
+
+  .notion-simple-table-cell {
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
 `
